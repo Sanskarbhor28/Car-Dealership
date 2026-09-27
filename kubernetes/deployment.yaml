@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: car-dealership-deployment
+  labels:
+    app: car-dealership
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: car-dealership
+  template:
+    metadata:
+      labels:
+        app: car-dealership
+    spec:
+      containers:
+        - name: car-dealership-app
+          image: us.icr.io/dealership-namespace/car-dealership:v1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: car-dealership-config
+            - secretRef:
+                name: car-dealership-secret
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          readinessProbe:
+            httpGet:
+              path: /api/dealers/
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /api/dealers/
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 15

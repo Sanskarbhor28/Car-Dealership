@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: car_dealership_web
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=django-insecure-production-capstone-key
+      - DEBUG=True
+      - FLASK_SENTIMENT_URL=http://sentiment_service:5000/analyze
+    depends_on:
+      - sentiment_service
+    restart: always
+
+  sentiment_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: car_dealership_sentiment
+    command: python /app/server/flaskapp/app.py
+    ports:
+      - "5000:5000"
+    restart: always

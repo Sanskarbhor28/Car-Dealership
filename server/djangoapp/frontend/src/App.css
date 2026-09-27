@@ -1,0 +1,43 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+.brand-title {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.dealer-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.dealer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.badge-sentiment-positive {
+  background-color: #198754;
+  color: white;
+}
+
+.badge-sentiment-neutral {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-sentiment-negative {
+  background-color: #dc3545;
+  color: white;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+  padding: 45px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}

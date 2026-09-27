@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cars Dealership</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .card-img-top {
+            height: 240px;
+            object-fit: cover;
+        }
+        .team-card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .badge-role {
+            background-color: #0d6efd;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-3" href="/">🚗 Cars Dealership</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center shadow-sm">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About Cars Dealership</h1>
+            <p class="lead text-light max-w-700 mx-auto">
+                Welcome to National Cars Dealership. We connect buyers across the United States with top-rated dealerships, certified vehicles, and transparent customer reviews.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mb-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="Car Dealership Showroom" class="img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3 text-dark">Our Mission & Values</h2>
+                <p class="text-secondary fs-5">
+                    Founded in 2020, Cars Dealership is dedicated to creating a seamless, honest, and empowering vehicle purchasing experience. We provide real-time dealer listings, user reviews with sentiment analysis, and multi-state inventory lookup.
+                </p>
+                <ul class="list-unstyled text-secondary">
+                    <li class="mb-2">✔ Over 500+ verified dealership partners nationwide</li>
+                    <li class="mb-2">✔ AI-driven sentiment analysis for authentic reviews</li>
+                    <li class="mb-2">✔ Complete vehicle model catalogs & state filtering</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Team Section -->
+        <h2 class="text-center fw-bold mb-4">Meet Our Executive Team</h2>
+        <div class="row g-4">
+            <!-- Team Member 1 -->
+            <div class="col-md-4">
+                <div class="card team-card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="CEO Staff">
+                    <div class="card-body">
+                        <span class="badge badge-role text-white mb-2">Chief Executive Officer</span>
+                        <h5 class="card-title fw-bold">Alexander Wright</h5>
+                        <p class="card-text text-muted">Over 15 years in automotive retail leadership and digital transformation.</p>
+                        <p class="card-text"><small class="text-primary">📧 alexander.wright@carsdealership.com</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-4">
+                <div class="card team-card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="VP Sales">
+                    <div class="card-body">
+                        <span class="badge badge-role text-white mb-2">VP of Dealership Operations</span>
+                        <h5 class="card-title fw-bold">Sophia Martinez</h5>
+                        <p class="card-text text-muted">Oversees nationwide dealer partnerships, quality assurance, and customer satisfaction.</p>
+                        <p class="card-text"><small class="text-primary">📧 sophia.martinez@carsdealership.com</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4">
+                <div class="card team-card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="CTO Staff">
+                    <div class="card-body">
+                        <span class="badge badge-role text-white mb-2">Head of Technology</span>
+                        <h5 class="card-title fw-bold">David Chen</h5>
+                        <p class="card-text text-muted">Leads the software development, cloud infrastructure, and AI analytics teams.</p>
+                        <p class="card-text"><small class="text-primary">📧 david.chen@carsdealership.com</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Cars Dealership Capstone Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
