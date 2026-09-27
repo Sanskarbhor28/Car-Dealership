@@ -5,7 +5,7 @@ from django.http import JsonResponse, HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
@@ -53,6 +53,7 @@ def analyze_text_sentiment(text):
 @csrf_exempt
 @api_view(['POST', 'GET'])
 @permission_classes([AllowAny])
+@authentication_classes([])
 def login_user(request):
     """
     Endpoint for user authentication. Accepts JSON or form data.
@@ -90,6 +91,7 @@ def login_user(request):
 @csrf_exempt
 @api_view(['POST', 'GET'])
 @permission_classes([AllowAny])
+@authentication_classes([])
 def logout_user(request):
     """
     Endpoint for user logout.
