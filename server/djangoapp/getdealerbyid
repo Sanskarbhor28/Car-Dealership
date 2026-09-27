@@ -1,0 +1,2 @@
+curl -X GET http://127.0.0.1:8000/api/dealers/1/
+{"id":1,"dealer_id":1,"full_name":"Midwest Auto World","short_name":"Midwest Auto","city":"Wichita","state":"Kansas","address":"1020 N West St","zip":"67203","lat":37.6983,"long":-97.3912,"phone":"(316) 555-0199"}
