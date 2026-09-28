@@ -16,6 +16,8 @@ urlpatterns = [
     path('djangoapp/logout/', views.logout_user, name='djangoapp_logout'),
     path('fetchDealers', views.get_dealers, name='fetch_dealers_no_slash'),
     path('fetchDealers/', views.get_dealers, name='fetch_dealers'),
+    path('fetchDealers/state/<str:state>', views.get_dealers, name='fetch_dealers_by_state_no_slash'),
+    path('fetchDealers/state/<str:state>/', views.get_dealers, name='fetch_dealers_by_state'),
     path('fetchReviews/dealer/<int:dealer_id>', views.get_dealer_reviews, name='fetch_dealer_reviews_no_slash'),
     path('fetchReviews/dealer/<int:dealer_id>/', views.get_dealer_reviews, name='fetch_dealer_reviews'),
 
