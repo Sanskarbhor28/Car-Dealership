@@ -1,4 +1,12 @@
-# Cars Dealership Capstone Project
+# fullstack_developer_capstone
+
+## Project Name
+
+fullstack_developer_capstone
+
+## Project Description
+
+Cars Dealership is a full-stack web application developed as part of the Full-stack Developer Capstone project...
 
 > Full-stack web application for a national car retailer in the United States, providing dealer listings, state-based filtering, customer reviews with AI sentiment analysis, user authentication, and multi-cloud deployment configurations.
 
