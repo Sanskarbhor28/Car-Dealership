@@ -16,7 +16,7 @@ const Dealers = ({ currentUser }) => {
     setLoading(true);
     setError('');
     try {
-      let url = '/api/dealers/';
+      let url = '/fetchDealers';
       if (stateFilter && stateFilter !== 'All') {
         url += `?state=${encodeURIComponent(stateFilter)}`;
       }

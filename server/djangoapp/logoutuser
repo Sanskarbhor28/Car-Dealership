@@ -1,2 +1,2 @@
-curl -X POST http://127.0.0.1:8000/api/logout/ -b cookies.txt
+curl -X GET http://127.0.0.1:8000/djangoapp/logout -b cookies.txt
 {"status": "Logged out", "userName": "", "message": "Successfully logged out"}

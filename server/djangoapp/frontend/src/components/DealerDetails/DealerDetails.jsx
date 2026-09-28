@@ -22,7 +22,7 @@ const DealerDetails = ({ currentUser }) => {
         setDealer(dealerData);
 
         // Fetch Reviews
-        const reviewsRes = await fetch(`/api/dealers/${id}/reviews/`);
+        const reviewsRes = await fetch(`/fetchReviews/dealer/${id}`);
         if (reviewsRes.ok) {
           const reviewsData = await reviewsRes.json();
           setReviews(reviewsData);

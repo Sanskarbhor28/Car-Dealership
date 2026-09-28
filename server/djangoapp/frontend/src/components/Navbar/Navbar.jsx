@@ -6,7 +6,7 @@ const Navbar = ({ currentUser, onLogout }) => {
 
   const handleLogout = async () => {
     try {
-      await fetch('/api/logout/', { method: 'POST' });
+      await fetch('/djangoapp/logout', { method: 'GET' });
     } catch (e) {
       console.error('Logout request failed', e);
     }
